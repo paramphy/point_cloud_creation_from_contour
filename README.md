@@ -16,7 +16,7 @@ This code tries to construct a 3d representation of a SEM image using contours o
 
 |                        Real 2D image                         |                      3D representation                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="2Dimage.jpg" style="zoom:30%;" /> | <img src="S4_05_small.png" style="zoom:72%;" /> |
+| <img src="2Dimage.jpg" style="zoom:20%;" /> | <img src="S4_05_small.png" style="zoom:30%;" /> |
 
 ## Video demo
 
