@@ -42,9 +42,8 @@ def pointcloudcreation(imagepath):
 
     fig = plt.figure()
     ax = fig.add_subplot(projection='3d')
-    title = imagepath.strip(
-        r"C:\Users\Paramesh\Documents\GitHub\Param-Woks\My work 2\python trials\images"
-    )
+    title = imagepath
+
     ax.set_title(title)
 
     ax.set_xlabel("X")
@@ -79,7 +78,7 @@ def pointcloudcreation(imagepath):
                         )
 
         except:
-            print("There is no contour to find. Continueing for the next itteration.")
+            print("There is no contour to find. Continuing for the next itteration.")
             continue
 
     print("The calculations are done!\n")
@@ -90,16 +89,11 @@ def pointcloudcreation(imagepath):
 
 
 def main():
-    basefolderpath = (
-        r"C:\Users\Paramesh\Documents\GitHub\Param-Woks\My work 2\python trials\images"
-    )
+    basefolderpath = (os.getcwd())
     paths = listfiles(basefolderpath, "tif")
 
     for path in paths:
-        path = (
-            r"C:\Users\Paramesh\Documents\GitHub\Param-Woks\My work 2\python trials\images\\"
-            + path
-        )
+        
         pointcloudcreation(path)
 
 
